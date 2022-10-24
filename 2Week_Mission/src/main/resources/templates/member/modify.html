@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+    <div class="my-3 border-bottom">
+        <div>
+            <h4>회원 정보 수정</h4>
+        </div>
+    </div>
+    <form th:action="@{/member/modify}"  method="post">
+
+        <div class="mb-3">
+            <label class="form-label">이메일</label>
+            <input type="email"name="email" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">별명</label>
+            <input type="text" name="nickName" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">수정완료</button>
+    </form>
+</div>
+</html>

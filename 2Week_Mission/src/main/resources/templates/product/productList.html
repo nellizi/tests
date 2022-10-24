@@ -1,0 +1,22 @@
+<table>
+    <thead>
+    <tr>
+        <th>글 번호</th>
+        <th>상품명</th>
+        <th>가격</th>
+        <th>작성자</th>
+        <th>작성날짜</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.productId}"></td>
+        <td th:text="${product.subject}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.memberId}"></td>
+        <td th:text="${product.createdAt}"></td>
+    </tr>
+    </tbody>
+</table>
+
+
